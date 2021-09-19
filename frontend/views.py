@@ -11,4 +11,4 @@ def homepage(request):
     for user in users_query_set:
         print('{} {}: {}'.format(user.fname, user.lname, user.email))
     print('#'*25)
-    return render(request, 'hello.html', { 'name': 'ash', 'users': users_query_set})
+    return render(request, 'list_users.html', {'users': users_query_set})
