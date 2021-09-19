@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Users
 
-# Created my views here.
+# Created my views below.
 
 def homepage(request):
     users_query_set = Users.objects.all()
