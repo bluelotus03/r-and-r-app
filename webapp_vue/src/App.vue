@@ -1,6 +1,7 @@
 <template>
   <div id="wrapper">
   <nav class="navbar is-dark">
+    
   </nav>
     <router-view/>
   </div>
