@@ -6,6 +6,11 @@ name = "pypi"
 [packages]
 django = "*"
 mysqlclient = "*"
+pillow = "*"
+djoser = "*"
+django-rest-framework = "*"
+stripe = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
