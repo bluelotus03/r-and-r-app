@@ -2,10 +2,8 @@
   <div id="wrapper">
     <nav class="navbar is-dark">
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item"
-          ><strong>Recyle&Reuse</strong></router-link
-        >
-
+        <router-link to="/" class="navbar-item"><strong>Recyle&Reuse</strong></router-link>
+        
         <a
           class="navbar-burger"
           aria-label="menu"
@@ -26,9 +24,7 @@
 
           <div class="navbar-item">
             <div class="buttons">
-              <router-link to="/log-in" class="button is-Light"
-                >Log in</router-link
-              >
+              <router-link to="/log-in" class="button is-Light">Log in</router-link>
 
               <router-link to="/cart" class="button is-success">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
@@ -45,7 +41,7 @@
     </div>
 
     <section class="section">
-      <router-view />
+      <router-view/>
     </section>
 
     <footer class="footer">
