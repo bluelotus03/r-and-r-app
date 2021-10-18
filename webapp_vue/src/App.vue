@@ -19,13 +19,14 @@
 
       <div class="navbar-menu" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu}">
         <div class="navbar-end">
-          <router-link to="/summer" class="navbar-item">Summer</router-link>
-          <router-link to="/winter" class="navbar-item">Winter</router-link>
+          <router-link to="/furniture" class="navbar-item">Furniture</router-link>
+          <router-link to="/clothing" class="navbar-item">Clothing</router-link>
+          <router-link to="/accessories" class="navbar-item">Accessories</router-link>
+          <router-link to="/misc" class="navbar-item">Misc</router-link>
 
           <div class="navbar-item">
             <div class="buttons">
               <router-link to="/log-in" class="button is-Light">Log in</router-link>
-
               <router-link to="/cart" class="button is-success">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Cart ({{ cartTotalLength }})</span>
