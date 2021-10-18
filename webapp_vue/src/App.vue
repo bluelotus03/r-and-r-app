@@ -1,6 +1,6 @@
 <template>
   <div id="wrapper">
-    <nav class="navbar is-dark">
+    <nav class="navbar thin-border">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item"><strong>Recyle&Reuse</strong></router-link>
         
@@ -120,6 +120,15 @@ export default {
   &.is-loading {
     height: 80px;
   }
+}
+
+.button {
+  background-color: #1d4286;
+  color: white;
+}
+
+.thin-border {
+  border-block: gray;
 }
 
 </style>

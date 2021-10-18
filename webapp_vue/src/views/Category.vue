@@ -73,3 +73,10 @@ export default {
     }
 }
 </script>
+
+<style>
+.button {
+  background-color: #1d4286;
+  color: white;
+}
+</style>

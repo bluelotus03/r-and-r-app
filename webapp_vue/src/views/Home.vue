@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <section class="hero is-medium is-dark mb-6">
-      <div class="hero-body has-text-centered">
+      <!-- <img src="./../assets/home-span.PNG"> -->
+      <div class="hero-body has-text-centered blue">
         <p class="title mb-6">Welcome to Recycle & Reuse</p>
         <p class="subtitle">Create a better world.</p>
       </div>
@@ -76,5 +77,9 @@ export default {
   margin-top: -1.25rem;
   margin-left: -1.25rem;
   margin-right: -1.25rem;
+}
+
+.blue {
+  background-color: #1d4286;
 }
 </style>
