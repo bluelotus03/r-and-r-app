@@ -1,9 +1,9 @@
 <template>
     <div class="page-category">
-        <div class="columns is-multine">
+        <div class="columns is-multiline">
             <div class="column is-12">
                 <h2 class="is-size-2 has-text-centered">{{ category.name }}</h2>
-            </div> 
+            </div>
 
             <div class="column is-3" 
                 v-for="product in category.products"
@@ -78,5 +78,11 @@ export default {
 .button {
   background-color: #1d4286;
   color: white;
+}
+
+.image {
+  margin-top: -1.25rem;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 </style>
