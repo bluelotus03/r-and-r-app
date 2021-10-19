@@ -9,8 +9,8 @@
           aria-label="menu"
           aria-expanded="false"
           data-target="navbar-menu"
-          @click="showMobileMenu = !showMobileMenu"
-        >
+          @click="showMobileMenu = !showMobileMenu">
+          
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
