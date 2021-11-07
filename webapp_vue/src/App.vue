@@ -46,7 +46,7 @@
           <div class="navbar-item">
             <div class="buttons">
               <router-link to="/log-in" class="button blue">Log in</router-link>
-              <router-link to="/cart" class="button green is-success">
+              <router-link to="/cart" class="button is-success">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Cart ({{ cartTotalLength }})</span>
               </router-link>
