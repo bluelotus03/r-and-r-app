@@ -60,3 +60,8 @@ export default {
 };
 </script>
 
+<style scoped>
+.blue {
+  background-color: #1d4286;
+}
+</style>
