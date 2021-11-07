@@ -2,7 +2,7 @@
   <div class="home">
     <section class="hero is-medium is-dark mb-6">
       <!-- <img src="./../assets/home-span.PNG"> -->
-      <div class="hero-body has-text-centered blue">
+      <div class="hero-body has-text-centered blue-static">
         <p class="title mb-6">Welcome to Recycle & Reuse</p>
         <p class="subtitle">Create a better world.</p>
       </div>
@@ -61,6 +61,9 @@ export default {
 </script>
 
 <style scoped>
+.blue-static {
+    background-color: #1d4286;
+}
 .blue {
   background-color: #1d4286;
 }

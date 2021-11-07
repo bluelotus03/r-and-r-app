@@ -32,7 +32,7 @@
                 <h2 class="subtitle">Summary</h2>
                 <strong>${{ cartTotalPrice.toFixed(2) }}</strong>, {{ cartTotalLength }} items
                 <hr>
-                <router-link to="/cart/checkout" class="button is-dark">Proceed to checkout</router-link>
+                <router-link to="/cart/checkout" class="button blue">Checkout</router-link>
             </div>
 
         </div>
@@ -77,3 +77,13 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.blue {
+  background-color: #1d4286;
+}
+.blue:hover {
+    background-color: #0b4eca;
+    color: white;
+}
+</style>
