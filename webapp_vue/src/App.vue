@@ -45,8 +45,8 @@
 
           <div class="navbar-item">
             <div class="buttons">
-              <router-link to="/log-in" class="button is-Light">Log in</router-link>
-              <router-link to="/cart" class="button is-success">
+              <router-link to="/log-in" class="button blue">Log in</router-link>
+              <router-link to="/cart" class="button green is-success">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Cart ({{ cartTotalLength }})</span>
               </router-link>
@@ -142,9 +142,13 @@ export default {
   }
 }
 
-.button {
+.blue {
   background-color: #1d4286;
   color: white;
+}
+.blue:hover {
+    background-color: #0b4eca;
+    color: white;
 }
 
 .thin-border {
