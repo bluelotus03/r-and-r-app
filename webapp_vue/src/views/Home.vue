@@ -64,4 +64,8 @@ export default {
 .blue {
   background-color: #1d4286;
 }
+.blue:hover {
+    background-color: #0b4eca;
+    color: white;
+}
 </style>
