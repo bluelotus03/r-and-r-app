@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="control">
-                        <a class="button is-dark" @click="addToCart">Add to cart</a>
+                        <a class="button blue" @click="addToCart">Add to cart</a>
                     </div>
                 </div>
             </div>
@@ -89,8 +89,12 @@ export default {
 </script>
 
 <style>
-.button {
+.blue {
   background-color: #1d4286;
   color: white;
+}
+.blue:hover {
+    background-color: #0b4eca;
+    color: white;
 }
 </style>

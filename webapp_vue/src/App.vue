@@ -9,8 +9,8 @@
           aria-label="menu"
           aria-expanded="false"
           data-target="navbar-menu"
-          @click="showMobileMenu = !showMobileMenu"
-        >
+          @click="showMobileMenu = !showMobileMenu">
+          
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -18,6 +18,25 @@
       </div>
 
       <div class="navbar-menu" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu}">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <form method="get" action="/search">
+              <div class="field has-addons">
+                <div class="control">
+                  <input type="text" class="input" placeholder="Search for an item" name="query">
+                </div>
+                <div class="control">
+                  <button class="button is-successful">
+                    <span class="icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </button>
+                </div>  
+              </div>
+            </form>
+          </div>
+        </div>
+        
         <div class="navbar-end">
           <router-link to="/furniture" class="navbar-item">Furniture</router-link>
           <router-link to="/clothing" class="navbar-item">Clothing</router-link>
@@ -26,7 +45,7 @@
 
           <div class="navbar-item">
             <div class="buttons">
-              <router-link to="/log-in" class="button is-Light">Log in</router-link>
+              <router-link to="/log-in" class="button blue">Log in</router-link>
               <router-link to="/cart" class="button is-success">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Cart ({{ cartTotalLength }})</span>
@@ -123,9 +142,13 @@ export default {
   }
 }
 
-.button {
+.blue {
   background-color: #1d4286;
   color: white;
+}
+.blue:hover {
+    background-color: #0b4eca;
+    color: white;
 }
 
 .thin-border {
