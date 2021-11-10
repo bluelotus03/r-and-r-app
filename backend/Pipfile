@@ -14,6 +14,13 @@ django-cors-headers = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-mock = "*"
+pytest-xdist = "*"
+pytest-html = "*"
+pytest-factoryboy = "*"
+faker = "*"
 
 [requires]
 python_version = "3.9"
