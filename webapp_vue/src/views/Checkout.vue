@@ -37,39 +37,45 @@
                 <div class="columns is-multiline">
                     <div class="column is-6">
                             <div class="field">
-                                <label>First Name</label>
+                                <label>First Name*</label>
                                 <div class="control">
                                     <input type="text" class="input" v-model="first_name">
                                 </div>
                             </div>
                             <div class="field">
-                                <label>Last Name</label>
+                                <label>Last Name*</label>
                                 <div class="control">
                                     <input type="text" class="input" v-model="last_name">
                                 </div>
                             </div>
                             <div class="field">
-                                <label>Email</label>
+                                <label>Email*</label>
                                 <div class="control">
                                     <input type="email" class="input" v-model="email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Phone*</label>
+                                <div class="control">
+                                    <input type="email" class="input" v-model="phone">
                                 </div>
                             </div>
                     </div>
                     <div class="column is-6">
                             <div class="field">
-                                <label>Address</label>
+                                <label>Address*</label>
                                 <div class="control">
                                     <input type="text" class="input" v-model="address">
                                 </div>
                             </div>
                             <div class="field">
-                                <label>Zipcode</label>
+                                <label>Zipcode*</label>
                                 <div class="control">
                                     <input type="text" class="input" v-model="zipcode">
                                 </div>
                             </div>
                             <div class="field">
-                                <label>State</label>
+                                <label>State*</label>
                                 <div class="control">
                                     <input type="email" class="input" v-model="state">
                                 </div>
@@ -122,7 +128,28 @@ export default {
             return item.quantity * item.product.price
         },
         submitForm() {
-
+            this.errors = []
+            if (this.first_name === '') {
+                this.errors.push('Please enter First Name')
+            }
+            if(this.last_name === '') {
+                this.errors.push('Please enter Last Name')
+            }
+            if(this.email === '') {
+                this.errors.push('Please enter Email')
+            }
+            if(this.phone === '') {
+                this.errors.push('Please enter Phone Number')
+            }
+            if(this.address === '') {
+                this.errors.push('Please enter Address')
+            }
+            if(this.zipcode === '') {
+                this.errors.push('Please enter Zipcode')
+            }
+            if(this.state === '') {
+                this.errors.push('Please enter State')
+            }
         }
     },
     computed: {
