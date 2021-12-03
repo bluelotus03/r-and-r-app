@@ -45,7 +45,14 @@
 
           <div class="navbar-item">
             <div class="buttons">
-              <router-link to="/log-in" class="button blue">Log in</router-link>
+              <!-- check if user is authenticated, if so, show My account button -->
+              <template v-if="$store.state.isAuthenticated">
+                <router-link to="/my-account" class="button blue">My account</router-link>
+              </template>  
+              <!-- if user is not authenticated, show Log in button -->
+              <template v-else>
+                <router-link to="/log-in" class="button blue">Log in</router-link>
+              </template> 
               <router-link to="/cart" class="button is-success">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Cart ({{ cartTotalLength }})</span>
