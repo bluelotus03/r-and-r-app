@@ -31,6 +31,62 @@
                     </tfoot>
                 </table>
             </div>
+            <div class="column is-12 box"> 
+                <h2 class="subtitle">Shipping details</h2>
+                <p class="has-text-grey mb-4">*All fields are required</p>
+                <div class="columns is-multiline">
+                    <div class="column is-6">
+                            <div class="field">
+                                <label>First Name</label>
+                                <div class="control">
+                                    <input type="text" class="input" v-model="first_name">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Last Name</label>
+                                <div class="control">
+                                    <input type="text" class="input" v-model="last_name">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Email</label>
+                                <div class="control">
+                                    <input type="email" class="input" v-model="email">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="column is-6">
+                            <div class="field">
+                                <label>Address</label>
+                                <div class="control">
+                                    <input type="text" class="input" v-model="address">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Zipcode</label>
+                                <div class="control">
+                                    <input type="text" class="input" v-model="zipcode">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>State</label>
+                                <div class="control">
+                                    <input type="email" class="input" v-model="state">
+                                </div>
+                            </div>
+                    </div>   
+                </div>
+                <div class="notification is-danger mt-4" v-if="errors.length">
+                        <p v-for="error in errors" v-bind:key="error">{{ error }}</p>
+                </div>    
+                <hr>
+                <div id="card-element" class="mb-5"></div>    
+                    <!-- if more than 0 items in cart, show button option to Pay with Stripe -->
+                    <template v-if="cartTotalLength">
+                        <hr>
+                        <button class="button blue" @click="submitForm">Pay with Stripe</button>
+                    </template>
+            </div>
         </div>
     </div>
 </template>
@@ -53,7 +109,7 @@ export default {
             phone: '',
             address: '',
             zipcode: '',
-            place: '',
+            state: '',
             errors: []
         }
     },
@@ -65,6 +121,9 @@ export default {
         getItemTotal(item) {
             return item.quantity * item.product.price
         },
+        submitForm() {
+
+        }
     },
     computed: {
         cartTotalLength() {
