@@ -196,7 +196,7 @@ export default {
             }
 
             await axios
-                .post('/api/v1/checkout', data)
+                .post('/api/v1/checkout/', data)
                 .then(response => {
                     this.$store.commit('clearCart')
                     this.$router.push('/cart/success')
