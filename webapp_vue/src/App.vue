@@ -169,6 +169,10 @@ export default {
     color: white;
 }
 
+.button:link, .button:visited, .button:hover, .button:active {
+  color: white;
+}
+
 .thin-border {
   border-block: gray;
 }
